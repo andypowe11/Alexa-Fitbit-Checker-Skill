@@ -1,0 +1,63 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my fitbit checker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CheckMyHeartIntent",
+                    "slots": [],
+                    "samples": [
+                        "how my heartrate is doing",
+                        "how my heartrate is",
+                        "how my heart is doing",
+                        "how my heart is",
+                        "how is my heartrate",
+                        "check my heartrate",
+                        "how's my heartrate",
+                        "how's my heart",
+                        "check my heart",
+                        "how is my heart"
+                    ]
+                },
+                {
+                    "name": "CheckMySleepIntent",
+                    "slots": [],
+                    "samples": [
+                        "how i slept",
+                        "how did I sleep",
+                        "how was my sleep",
+                        "check my sleep",
+                        "how's my sleep",
+                        "how is my sleep"
+                    ]
+                },
+                {
+                    "name": "WelcomeIntent",
+                    "slots": [],
+                    "samples": [
+                        "welcome",
+                        "hi",
+                        "hello"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
