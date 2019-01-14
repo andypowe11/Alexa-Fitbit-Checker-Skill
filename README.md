@@ -13,5 +13,8 @@ There's three parts to the deployment. Create the Lambda function that acts as t
 The Lambda function is written in Node.js. In your node development environment create a new folder for the skill and clone this repo into it.
 
     npm install
+    zip -r ../alexa.zip *
 
-Create a new Lambda function
+Using the AWS console, create a new Lambda function, using 'Author from Scratch', Node.js 8.10 and the lambda_basic_execution role.
+
+In a second browser tab, go to the Alex Developer Console and create a new English (UK) Custom skill. Select Start from Scratch and then upload the invocation.json file to the Invocation area. Click Build Model.
