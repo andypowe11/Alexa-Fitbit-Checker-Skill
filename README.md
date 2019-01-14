@@ -17,4 +17,4 @@ The Lambda function is written in Node.js. In your node development environment 
 
 Using the AWS console, create a new Lambda function, using 'Author from Scratch', Node.js 8.10 and the lambda_basic_execution role.
 
-In a second browser tab, go to the Alex Developer Console and create a new English (UK) Custom skill. Select Start from Scratch and then upload the invocation.json file to the Invocation area. Click Build Model.
+In a second browser tab, go to the Alex Developer Console and create a new `English (UK)` `Custom` skill. Select `Start from Scratch` and then upload the invocation.json file to the Invocation area. Click `Build Model`.
