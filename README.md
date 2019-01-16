@@ -19,8 +19,10 @@ In your Node.js development environment, create a new folder for the skill and c
     mkdir alexa-fitbit-checker
     cd alexa-fitbit-checker
     git clone https://github.com/andypowe11/Alexa-Fitbit-Checker-Skill
+    cd Alexa-Fitbit-Checker-Skill
     npm install
     zip -r ../alexa.zip *
+    cd ..
 
 Using the AWS console, create a new Lambda function, using `Author from Scratch`, `Node.js 8.10` and the `lambda_basic_execution` role.
 
