@@ -28,6 +28,52 @@ Using the AWS console, create a new Lambda function, using `Author from Scratch`
 
 Under `Code entry type` select `Upload a .zip file` and upload the Zip file above. Note that your code will not be visible (or editable) in the AWS console.
 
+Note the ARN of the function, top right.
+
 ## Step 2 - Create the Alexa skill
 
 In a second browser tab, go to the Alex Developer Console and create a new `English (UK)` `Custom` skill. Select `Start from Scratch` and then upload the `invocation.json` file to the Invocation area. Click `Build Model`.
+
+Go to the `Endpoint` tab and choose `AWS Lambda ARN` under `Service Endpoint Type`. Enter the ARN above.
+
+## Step 3 - Create the Fitbit application
+
+In a third browser tab, go to the Fitbit developer console at https://dev.fitbit.com/apps and `Register a new app`.
+
+Fill in the form fields. For the `OAuth 2.0 Application Type` choose `Personal`.
+
+For the `Default Access Type` choose `Read-only`.
+
+Leave the `Callback URL` blank for now.
+
+Click `Save` and then go to `Manage my Apps` and click on your new app name. Note the `OAuth 2.0 Client ID` and various other bits of information.
+
+## Step 4 - Link the Fitbit application and the Alexa skill
+
+Go back to your Alexa skill browser tab and go to `Account Linking`.
+
+The `Do you allow users to create an account or link to an existing account with you?` setting should be on and the `Allow users to enable skill without account linking` setting should be off.
+
+Select `Auth Code Grant` and the grant type.
+
+The `Authorization URI` is `https://www.fitbit.com/oauth2/authorize`.
+
+The `Access Token URI` is `https://api.fitbit.com/oauth2/token`.
+
+The `Client ID` is the `OAuth 2.0 Client ID` taken from the Fitbit application summary page (above).
+
+The `Client Secret` is the `Client Secret` from the Fitbit application summary page (above).
+
+Set the `Client Authentication Scheme` to `HTTP Basic (Recommended)`.
+
+Add `heartrate`, `profile` and `sleep` to the `Scope`.
+
+Note the `Redirect URL` with `layla` in it.
+
+Finally, go back to Fitbit application tbrowser tab and click `Edit Application Settings`. Set the `Callback URL` to the `layla` URL (above).
+
+## Step 5 - Test it
+
+Go back to your Alexa skill browser tab and click on the `Test` button. Type `alexa open my fitbit checker` and see what happens. You should, hopefully, be prompted to link Alexa to your Fitbit account using the Alexa app.
+
+Once that is doen, you should be able to say 'Alexa ask my fitbit checker how I slept'.
