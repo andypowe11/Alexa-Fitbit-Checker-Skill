@@ -52,23 +52,23 @@ Click `Save` and then go to `Manage my Apps` and click on your new app name. Not
 
 Go back to your Alexa skill browser tab and go to `Account Linking`.
 
-The `Do you allow users to create an account or link to an existing account with you?` setting should be on and the `Allow users to enable skill without account linking` setting should be off.
+The `Do you allow users to create an account or link to an existing account with you?` setting should be 'on' and the `Allow users to enable skill without account linking` setting should be 'off'.
 
-Select `Auth Code Grant` and the grant type.
+Select `Auth Code Grant` as the grant type.
 
-The `Authorization URI` is `https://www.fitbit.com/oauth2/authorize`.
+The `Authorization URI` is 'https://www.fitbit.com/oauth2/authorize'.
 
-The `Access Token URI` is `https://api.fitbit.com/oauth2/token`.
+The `Access Token URI` is 'https://api.fitbit.com/oauth2/token'.
 
-The `Client ID` is the `OAuth 2.0 Client ID` taken from the Fitbit application summary page (above).
+The `Client ID` is the 'OAuth 2.0 Client ID' taken from the Fitbit application summary page (above).
 
-The `Client Secret` is the `Client Secret` from the Fitbit application summary page (above).
+The `Client Secret` is the 'Client Secret' from the Fitbit application summary page (above).
 
 Set the `Client Authentication Scheme` to `HTTP Basic (Recommended)`.
 
 Add `heartrate`, `profile` and `sleep` to the `Scope`.
 
-Note the `Redirect URL` with `layla` in it.
+Note the `Redirect URL` with 'layla' in it.
 
 Finally, go back to Fitbit application tbrowser tab and click `Edit Application Settings`. Set the `Callback URL` to the `layla` URL (above).
 
@@ -76,4 +76,4 @@ Finally, go back to Fitbit application tbrowser tab and click `Edit Application 
 
 Go back to your Alexa skill browser tab and click on the `Test` button. Type `alexa open my fitbit checker` and see what happens. You should, hopefully, be prompted to link Alexa to your Fitbit account using the Alexa app.
 
-Once that is doen, you should be able to say 'Alexa ask my fitbit checker how I slept'.
+Once that is done, you should be able to say 'Alexa ask my fitbit checker how I slept'.
