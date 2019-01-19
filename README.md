@@ -76,4 +76,4 @@ Finally, go back to Fitbit application tbrowser tab and click `Edit Application 
 
 Go back to your Alexa skill browser tab and click on the `Test` button. Type `alexa open my fitbit checker` and see what happens. You should, hopefully, be prompted to link Alexa to your Fitbit account using the Alexa app.
 
-Once that is done, you should be able to say 'Alexa ask my fitbit checker how I slept'.
+Once that is done, you should be able to say Say, "Alexa, ask my fitbit checker how I slept" or "Alexa, ask my fitbit checker how my heart is".
