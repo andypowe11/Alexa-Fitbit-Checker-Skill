@@ -26,7 +26,7 @@ In your Node.js development environment, create a new folder for the skill and c
 
 Using the AWS console, create a new Lambda function, using `Author from Scratch`, `Node.js 8.10` and the `lambda_basic_execution` role.
 
-Under `Code entry type` select `Upload a .zip file` and upload the Zip file above. Note that your code will not be visible (or editable) in the AWS console.
+Under `Code entry type` select `Upload a .zip file` and upload the Zip file above. Your code will not be visible (or editable) in the AWS console.
 
 Note the ARN of the function, top right.
 
